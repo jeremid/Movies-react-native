@@ -1,6 +1,6 @@
 import React from 'react';
 import {Tabs} from "expo-router";
-import {Image, ImageBackground, Text, View} from "react-native";
+import {Image, ImageBackground, StatusBar, Text, View} from "react-native";
 import {images} from "@/constants/images";
 import {icons} from "@/constants/icons";
 
@@ -74,6 +74,7 @@ const _Layout = () => {
                     )
                 }}
             />
+
             <Tabs.Screen
                 name="search"
                 options={{
@@ -88,6 +89,7 @@ const _Layout = () => {
                     )
                 }}
             />
+
             <Tabs.Screen
                 name="saved"
                 options={{
@@ -102,6 +104,7 @@ const _Layout = () => {
                     )
                 }}
             />
+
             <Tabs.Screen
                 name="profile"
                 options={{
