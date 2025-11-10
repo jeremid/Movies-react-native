@@ -120,13 +120,18 @@ const MovieDetails = () => {
                     >
                         <MovieInfo
                             label="Budget"
-                            value={`${movie?.budget / 1_000_000} mio`}
+                            value={
+                                movie?.budget ? `$${(movie.budget / 1_000_000).toFixed(1)} mio` : "N/A"
+                            }
                         />
 
                         <MovieInfo
                             label="Revenue"
-                            value={`${Math.round(movie?.revenue) / 1_000_000} mio`}
+                            value={
+                                movie?.revenue ? `$${(movie.revenue / 1_000_000).toFixed(1)} mio` : "N/A"
+                            }
                         />
+
                     </View>
 
                     <MovieInfo
